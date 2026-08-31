@@ -4,137 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Бетремеева Татьяна Сергеевна — учитель биологии</title>
-  <meta name="description" content="Персональный сайт учителя биологии Бетремеевой Татьяны Сергеевны. Учебные материалы, расписание и контакты.">
+  <meta name="description" content="Персональный сайт учителя биологии Бетремеевой Татьяны Сергеевны.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="На главную">
-        <span class="brand-mark">🌿</span>
-        <span>Учитель<br>биологии</span>
-      </a>
-      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
-      <nav class="menu" id="menu">
-        <a href="#home">Главная</a>
-        <a href="#about">Обо мне</a>
-        <a href="#subjects">Мои предметы</a>
-        <a href="#materials">Материалы</a>
-        <a href="#schedule">Расписание</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <a class="button button-dark nav-button" href="#contacts">Связаться со мной</a>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="brand-mark">🌿</span><span>Учитель<br>биологии</span></a>
+    <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#home">Главная</a><a href="#about">Обо мне</a><a href="#subjects">Мои предметы</a>
+      <a href="#materials">Материалы</a><a href="#schedule">Расписание</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="button button-dark nav-button" href="#contacts">Связаться со мной</a>
+  </div>
+</header>
+
+<main>
+<section class="hero section" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Добро пожаловать на мой сайт!</div>
+      <h1>Бетремеева<br>Татьяна<br>Сергеевна</h1>
+      <p class="role">Учитель биологии</p>
+      <div class="leaf-line">⌁ 🌱 ⌁</div>
+      <p class="lead">Биология — наука о жизни, а жизнь — это самое увлекательное, что нас окружает. Я помогаю ученикам открывать удивительный мир природы и узнавать его с новой стороны.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#materials">Учебные материалы</a>
+        <a class="button button-light" href="#about">Узнать обо мне</a>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow" id="greeting"></div>
-          <h1 id="teacher-name"></h1>
-          <p class="role" id="teacher-subject"></p>
-          <div class="leaf-line">⌁ 🌱 ⌁</div>
-          <p class="lead" id="teacher-intro"></p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#materials">Учебные материалы</a>
-            <a class="button button-light" href="#about">Узнать обо мне</a>
-          </div>
-        </div>
-        <div class="hero-photo-wrap">
-          <div class="hero-arch"></div>
-          <img class="hero-photo" src="assets/teacher-portrait.jpg" alt="Бетремеева Татьяна Сергеевна, учитель биологии">
-          <div class="quote-card">
-            <span class="quote-mark">“</span>
-            <p>Уча других, мы учимся сами.</p>
-            <small>Сенека</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="about">
-      <div class="container narrow">
-        <div class="section-heading">
-          <span class="eyebrow">Обо мне</span>
-          <h2>Биология с интересом к жизни</h2>
-        </div>
-        <p class="section-text" id="teacher-about"></p>
-      </div>
-    </section>
-
-    <section class="section" id="subjects">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Мои предметы</span>
-          <h2>Учимся видеть живое вокруг</h2>
-        </div>
-        <div class="cards three">
-          <article class="info-card">
-            <span class="card-icon">🌱</span>
-            <h3>Ботаника</h3>
-            <p>Мир растений, их строение, жизненные процессы и удивительное разнообразие.</p>
-          </article>
-          <article class="info-card">
-            <span class="card-icon">🧬</span>
-            <h3>Общая биология</h3>
-            <p>Клетка, генетика, эволюция и закономерности развития живых систем.</p>
-          </article>
-          <article class="info-card">
-            <span class="card-icon">🔬</span>
-            <h3>Практика</h3>
-            <p>Лабораторные работы, наблюдения, исследования и проектная деятельность.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="materials">
-      <div class="container">
-        <div class="section-heading row-heading">
-          <div>
-            <span class="eyebrow">Учебные материалы</span>
-            <h2>Всё необходимое — в одном месте</h2>
-          </div>
-          <span class="edit-hint">Документы загружаются через GitHub</span>
-        </div>
-        <div class="materials-grid" id="materials-list"></div>
-      </div>
-    </section>
-
-    <section class="section" id="schedule">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Расписание</span>
-          <h2>Рабочая неделя</h2>
-        </div>
-        <div class="schedule" id="schedule-list"></div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contacts">
-      <div class="container contact-box">
-        <div>
-          <span class="eyebrow">Контакты</span>
-          <h2>Буду рада общению</h2>
-          <p>Если у вас есть вопрос по урокам, заданиям или материалам, свяжитесь со мной.</p>
-        </div>
-        <a class="button button-dark" id="email-button" href="#">Написать учителю</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Бетремеева Татьяна Сергеевна</span>
-      <span>Сайт учителя биологии</span>
+    <div class="hero-photo-wrap">
+      <div class="hero-arch"></div>
+      <!-- Фото находится в корне репозитория GitHub: teacher-portrait.png -->
+      <img class="hero-photo" src="teacher-portrait.png" alt="Бетремеева Татьяна Сергеевна, учитель биологии">
+      <div class="quote-card"><span class="quote-mark">“</span><p>Уча других, мы учимся сами.</p><small>Сенека</small></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="site-data.js"></script>
-  <script src="script.js"></script>
+<section class="section section-soft" id="about">
+  <div class="container narrow"><div class="section-heading"><span class="eyebrow">Обо мне</span><h2>Биология с интересом к жизни</h2></div>
+  <p class="section-text">Моя задача — сделать изучение биологии понятным, интересным и практичным. На сайте собраны учебные материалы, задания, расписание и полезные ресурсы для учеников и родителей.</p></div>
+</section>
+
+<section class="section" id="subjects">
+  <div class="container"><div class="section-heading"><span class="eyebrow">Мои предметы</span><h2>Учимся видеть живое вокруг</h2></div>
+  <div class="cards three">
+    <article class="info-card"><span class="card-icon">🌱</span><h3>Ботаника</h3><p>Мир растений, их строение, жизненные процессы и удивительное разнообразие.</p></article>
+    <article class="info-card"><span class="card-icon">🧬</span><h3>Общая биология</h3><p>Клетка, генетика, эволюция и закономерности развития живых систем.</p></article>
+    <article class="info-card"><span class="card-icon">🔬</span><h3>Практика</h3><p>Лабораторные работы, наблюдения, исследования и проектная деятельность.</p></article>
+  </div></div>
+</section>
+
+<section class="section section-soft" id="materials">
+  <div class="container"><div class="section-heading"><span class="eyebrow">Учебные материалы</span><h2>Всё необходимое — в одном месте</h2></div>
+  <div class="materials-grid"><article class="material-card"><span class="material-type">PDF / DOCX / PPTX</span><h3>Материалы для учеников</h3><p>Здесь будут размещаться конспекты, презентации, задания и лабораторные работы.</p><a class="material-link" href="materials/README.txt" target="_blank">Открыть материалы →</a></article></div></div>
+</section>
+
+<section class="section" id="schedule">
+  <div class="container"><div class="section-heading"><span class="eyebrow">Расписание</span><h2>Рабочая неделя</h2></div>
+  <div class="schedule">
+    <div class="schedule-row"><div class="schedule-day">Понедельник</div><div class="schedule-lessons">Биология · 7 класс — 09:00<br>Биология · 9 класс — 11:00</div></div>
+    <div class="schedule-row"><div class="schedule-day">Вторник</div><div class="schedule-lessons">Биология · 8 класс — 10:00<br>Индивидуальные консультации — 14:00</div></div>
+    <div class="schedule-row"><div class="schedule-day">Среда</div><div class="schedule-lessons">Биология · 10 класс — 09:00<br>Лабораторная работа — 12:00</div></div>
+    <div class="schedule-row"><div class="schedule-day">Четверг</div><div class="schedule-lessons">Биология · 7 класс — 10:00<br>Биология · 11 класс — 12:00</div></div>
+    <div class="schedule-row"><div class="schedule-day">Пятница</div><div class="schedule-lessons">Проектная работа — 10:00<br>Консультации — 14:00</div></div>
+  </div></div>
+</section>
+
+<section class="section contact-section" id="contacts"><div class="container contact-box"><div><span class="eyebrow">Контакты</span><h2>Буду рада общению</h2><p>Если у вас есть вопрос по урокам, заданиям или материалам, свяжитесь со мной.</p></div><a class="button button-dark" href="mailto:teacher@example.ru">Написать учителю</a></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><span>© 2026 Бетремеева Татьяна Сергеевна</span><span>Сайт учителя биологии</span></div></footer>
+<script>
+const menu=document.getElementById("menu");
+document.querySelector(".menu-toggle").addEventListener("click",()=>menu.classList.toggle("open"));
+document.querySelectorAll(".menu a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+</script>
 </body>
 </html>
